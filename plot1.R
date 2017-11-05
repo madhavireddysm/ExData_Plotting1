@@ -18,7 +18,7 @@ if(!file.exists('Programming_Assignment_1'))
 InputFile <- file('./Programming_Assignment_1/household_power_consumption.txt')
 Dataset <- read.table(InputFile, header=T, sep=";", na.strings="?")
 
-# Get data from the dates 2007-02-01 and 2007-02-02 only.
+# Get data from the dates 2007-02-01 & 2007-02-02 only.
 
 Data <- Dataset[Dataset$Date %in% c("1/2/2007","2/2/2007"),]
 
